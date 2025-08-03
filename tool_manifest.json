@@ -1,0 +1,31 @@
+
+[
+  {
+    "tool_name": "create_repo",
+    "description": "Creates a GitHub repo",
+    "args_schema": {
+      "repo_name": "str",
+      "private": "bool",
+      "description": "str"
+    }
+  },
+  {
+    "tool_name": "push_code",
+    "description": "Push local code to existing GitHub repo",
+    "args_schema": {
+      "repo_url": "str",
+      "commit_message": "str",
+      "local_path": "str"
+    }
+  },
+  {
+    "tool_name": "create_and_push_repo",
+    "description": "Create GitHub repo and push local code",
+    "args_schema": {
+      "repo_name": "str",
+      "description": "str",
+      "private": "bool",
+      "local_path": "str"
+    }
+  }
+]
